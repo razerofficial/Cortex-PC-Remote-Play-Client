@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="backend">
+      <UniqueIdentifier>{8a47a6e5-ef77-4213-9883-e773732eb042}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui">
+      <UniqueIdentifier>{71e0e3e7-570c-4ff6-94f7-f9efd3b8231e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="settings">
+      <UniqueIdentifier>{591e298d-8375-4196-a588-d42b65943eb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="streaming">
+      <UniqueIdentifier>{21d58089-7ec3-4068-9898-bc47c96917b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="streaming\audio">
+      <UniqueIdentifier>{ae9068ce-fa59-45fe-8ba7-0fe9ac217dcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="streaming\input">
+      <UniqueIdentifier>{32c99198-2428-4efd-ad55-7d4fb9a95d72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="streaming\video">
+      <UniqueIdentifier>{86af4e19-7d69-412f-a4c3-c028b7cad638}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="streaming\audio\renderers">
+      <UniqueIdentifier>{c6413134-4e6f-47e5-94cc-89e87edf33de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="streaming\video\ffmpeg-renderers">
+      <UniqueIdentifier>{4d5e3ad1-a1e0-405d-98ec-86928334a2bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="streaming\video\ffmpeg-renderers\pacer">
+      <UniqueIdentifier>{a7e83d50-f82b-4436-9a3e-26fbe2b94f74}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="streaming\input\abstouch.cpp">
+      <Filter>streaming\input</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\audio\audio.cpp">
+      <Filter>streaming\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="settings\compatfetcher.cpp">
+      <Filter>settings</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\computermanager.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\video\ffmpeg-renderers\d3d11va.cpp">
+      <Filter>streaming\video\ffmpeg-renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\video\ffmpeg-renderers\dxva2.cpp">
+      <Filter>streaming\video\ffmpeg-renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\video\ffmpeg-renderers\pacer\dxvsyncsource.cpp">
+      <Filter>streaming\video\ffmpeg-renderers\pacer</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\video\ffmpeg.cpp">
+      <Filter>streaming\video</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\input\gamepad.cpp">
+      <Filter>streaming\input</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\identitymanager.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\input\input.cpp">
+      <Filter>streaming\input</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\input\keyboard.cpp">
+      <Filter>streaming\input</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>
+      </Filter>
+    </ClCompile>
+    <ClCompile Include="settings\mappingfetcher.cpp">
+      <Filter>settings</Filter>
+    </ClCompile>
+    <ClCompile Include="settings\mappingmanager.cpp">
+      <Filter>settings</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\input\mouse.cpp">
+      <Filter>streaming\input</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\nvaddress.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\nvapp.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\nvcomputer.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\nvhttp.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\nvpairingmanager.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\video\overlaymanager.cpp">
+      <Filter>streaming\video</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\video\ffmpeg-renderers\pacer\pacer.cpp">
+      <Filter>streaming\video\ffmpeg-renderers\pacer</Filter>
+    </ClCompile>
+    <ClCompile Include="path.cpp">
+      <Filter>
+      </Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\input\reltouch.cpp">
+      <Filter>streaming\input</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\richpresencemanager.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\audio\renderers\sdlaud.cpp">
+      <Filter>streaming\audio\renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\video\ffmpeg-renderers\sdlvid.cpp">
+      <Filter>streaming\video\ffmpeg-renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\session.cpp">
+      <Filter>streaming</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\audio\renderers\soundioaudiorenderer.cpp">
+      <Filter>streaming\audio\renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="settings\streamingpreferences.cpp">
+      <Filter>settings</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\streamutils.cpp">
+      <Filter>streaming</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\video\ffmpeg-renderers\swframemapper.cpp">
+      <Filter>streaming\video\ffmpeg-renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\systemproperties.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="wm.cpp">
+      <Filter>
+      </Filter>
+    </ClCompile>
+    <ClCompile Include="backend\mdnswarp.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="settings\configuer.cpp">
+      <Filter>settings</Filter>
+    </ClCompile>
+    <ClCompile Include="mainwindow.cpp">
+      <Filter>
+      </Filter>
+    </ClCompile>
+    <ClCompile Include="backend\windowsmessage.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\stream.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\pair.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\settings.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\asynctaskmanager.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\addcomputer.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\deletecomputer.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\computer.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\httpserver.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\quit.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\app.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\boxartmanager.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\razer.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Neuron_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="streaming\session.h">
+      <Filter>streaming</Filter>
+    </ClInclude>
+    <ClInclude Include="streaming\audio\renderers\renderer.h">
+      <Filter>streaming\audio\renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="streaming\audio\renderers\soundioaudiorenderer.h">
+      <Filter>streaming\audio\renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="streaming\audio\renderers\sdl.h">
+      <Filter>streaming\audio\renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="settings\compatfetcher.h">
+      <Filter>settings</Filter>
+    </ClInclude>
+    <ClInclude Include="streaming\video\ffmpeg-renderers\dxva2.h">
+      <Filter>streaming\video\ffmpeg-renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="streaming\video\ffmpeg-renderers\pacer\dxvsyncsource.h">
+      <Filter>streaming\video\ffmpeg-renderers\pacer</Filter>
+    </ClInclude>
+    <ClInclude Include="streaming\video\ffmpeg-renderers\dxutil.h">
+      <Filter>streaming\video\ffmpeg-renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="streaming\video\ffmpeg-renderers\d3d11va.h">
+      <Filter>streaming\video\ffmpeg-renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="streaming\video\ffmpeg.h">
+      <Filter>streaming\video</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\identitymanager.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="settings\mappingmanager.h">
+      <Filter>settings</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\nvaddress.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\nvapp.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\nvcomputer.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\nvhttp.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\nvpairingmanager.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="streaming\video\overlaymanager.h">
+      <Filter>streaming\video</Filter>
+    </ClInclude>
+    <ClInclude Include="streaming\video\ffmpeg-renderers\pacer\pacer.h">
+      <Filter>streaming\video\ffmpeg-renderers\pacer</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\richpresencemanager.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="streaming\video\ffmpeg-renderers\sdlvid.h">
+      <Filter>streaming\video\ffmpeg-renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="settings\streamingpreferences.h">
+      <Filter>settings</Filter>
+    </ClInclude>
+    <ClInclude Include="streaming\streamutils.h">
+      <Filter>streaming</Filter>
+    </ClInclude>
+    <ClInclude Include="streaming\video\ffmpeg-renderers\swframemapper.h">
+      <Filter>streaming\video\ffmpeg-renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\systemproperties.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>
+      </Filter>
+    </ClInclude>
+    <ClInclude Include="backend\mdnswarp.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="settings\configuer.h">
+      <Filter>settings</Filter>
+    </ClInclude>
+    <ClInclude Include="path.h">
+      <Filter>
+      </Filter>
+    </ClInclude>
+    <ClInclude Include="mainwindow.h">
+      <Filter>
+      </Filter>
+    </ClInclude>
+    <ClInclude Include="backend\windowsmessage.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\computermanager.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="settings\mappingfetcher.h">
+      <Filter>settings</Filter>
+    </ClInclude>
+    <ClInclude Include="streaming\input\input.h">
+      <Filter>streaming\input</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\stream.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\pair.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\settings.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\asynctaskmanager.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\addcomputer.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\deletecomputer.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\computer.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="streaming\video\ffmpeg-renderers\renderer.h">
+      <Filter>streaming\video\ffmpeg-renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="streaming\video\decoder.h">
+      <Filter>streaming\video</Filter>
+    </ClInclude>
+    <ClInclude Include="common.h">
+      <Filter>
+      </Filter>
+    </ClInclude>
+    <ClInclude Include="backend\httpserver.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\quit.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\app.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\boxartmanager.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\razer.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

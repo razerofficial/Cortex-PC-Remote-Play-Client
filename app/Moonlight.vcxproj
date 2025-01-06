@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A9DFCB86-C8A2-3071-A0B9-80C760C557A7}</ProjectGuid>
+    <RootNamespace>Moonlight</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.22621.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>Moonlight</PrimaryOutput>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v143</PlatformToolset>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>Moonlight</PrimaryOutput>
+    <EmbedManifest>true</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>Moonlight</PrimaryOutput>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v143</PlatformToolset>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>Moonlight</PrimaryOutput>
+    <EmbedManifest>true</EmbedManifest>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moonlight</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RazerRemotePlayClient</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moonlight</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">RazerRemotePlayClient</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IgnoreImportLibrary>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\libs\windows\include\x64;..\libs\windows\include;..\moonlight-common-c\moonlight-common-c\src;..\qmdnsengine\qmdnsengine\src\include;..\qmdnsengine;..\soundio\libsoundio;..\h264bitstream\h264bitstream;..\AntiHooking;C:\Qt\5.15.2\msvc2019_64\include;C:\Qt\5.15.2\msvc2019_64\include\QtQuickControls2;C:\Qt\5.15.2\msvc2019_64\include\QtQuick;C:\Qt\5.15.2\msvc2019_64\include\QtSvg;C:\Qt\5.15.2\msvc2019_64\include\QtWidgets;C:\Qt\5.15.2\msvc2019_64\include\QtGui;C:\Qt\5.15.2\msvc2019_64\include\QtANGLE;C:\Qt\5.15.2\msvc2019_64\include\QtQmlModels;C:\Qt\5.15.2\msvc2019_64\include\QtQml;C:\Qt\5.15.2\msvc2019_64\include\QtNetwork;C:\Qt\5.15.2\msvc2019_64\include\QtCore;release;/include;C:\Qt\5.15.2\msvc2019_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;NDEBUG;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x060000;_USE_MATH_DEFINES;HAVE_FFMPEG;HAVE_SOUNDIO;SOUNDIO_STATIC_LIBRARY;HAVE_DISCORD;VERSION_STR="5.0.1";NDEBUG;QT_NO_DEBUG;QT_QUICKCONTROLS2_LIB;QT_QUICK_LIB;QT_SVG_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_QMLMODELS_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;winmm.lib;dxva2.lib;ole32.lib;gdi32.lib;user32.lib;d3d9.lib;dwmapi.lib;dbghelp.lib;C:\Users\cheng.deng\Desktop\stream\moonlight-qt\libs\windows\lib\x64\libssl.lib;C:\Users\cheng.deng\Desktop\stream\moonlight-qt\libs\windows\lib\x64\libcrypto.lib;C:\Users\cheng.deng\Desktop\stream\moonlight-qt\libs\windows\lib\x64\SDL2.lib;C:\Users\cheng.deng\Desktop\stream\moonlight-qt\libs\windows\lib\x64\SDL2_ttf.lib;C:\Users\cheng.deng\Desktop\stream\moonlight-qt\libs\windows\lib\x64\avcodec.lib;C:\Users\cheng.deng\Desktop\stream\moonlight-qt\libs\windows\lib\x64\avutil.lib;C:\Users\cheng.deng\Desktop\stream\moonlight-qt\libs\windows\lib\x64\opus.lib;dxgi.lib;d3d11.lib;C:\Users\cheng.deng\Desktop\stream\moonlight-qt\libs\windows\lib\x64\discord-rpc.lib;moonlight-common-c.lib;qmdnsengine.lib;soundio.lib;h264bitstream.lib;AntiHooking.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5QuickControls2.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Quick.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Svg.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Widgets.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Gui.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5QmlModels.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Qml.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Network.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Core.lib;C:\Qt\5.15.2\msvc2019_64\lib\qtmain.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\cheng.deng\Desktop\stream\moonlight-qt\libs\windows\lib\x64;C:\Users\cheng.deng\Desktop\stream\moonlight-qt\moonlight-common-c\release;C:\Users\cheng.deng\Desktop\stream\moonlight-qt\qmdnsengine\release;C:\Users\cheng.deng\Desktop\stream\moonlight-qt\soundio\release;C:\Users\cheng.deng\Desktop\stream\moonlight-qt\h264bitstream\release;C:\Users\cheng.deng\Desktop\stream\moonlight-qt\AntiHooking\release;C:\openssl\lib;C:\Utils\my_sql\mysql-5.7.25-winx64\lib;C:\Utils\postgresql\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/MANIFESTINPUT:C:/Users/cheng.deng/Desktop/stream/moonlight-qt/app/Moonlight.exe.manifest "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateManifest>true</GenerateManifest>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\Moonlight.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.0</Version>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;NDEBUG;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x060000;_USE_MATH_DEFINES;HAVE_FFMPEG;HAVE_SOUNDIO;SOUNDIO_STATIC_LIBRARY;HAVE_DISCORD;VERSION_STR=\"5.0.1\";NDEBUG;QT_NO_DEBUG;QT_QUICKCONTROLS2_LIB;QT_QUICK_LIB;QT_SVG_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_QMLMODELS_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\libs\windows\include\x64;..\libs\windows\include;..\moonlight-common-c\moonlight-common-c\src;..\mdns_cpp\mdns_cpp\include;..\qmdnsengine\qmdnsengine\src\include;..\qmdnsengine;..\soundio\libsoundio;..\h264bitstream\h264bitstream;..\AntiHooking;release;/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;NDEBUG;_USE_MATH_DEFINES;HAVE_FFMPEG;HAVE_SOUNDIO;SOUNDIO_STATIC_LIBRARY;HAVE_DISCORD;VERSION_STR="5.0.1";BUILDING_LIBCURL;HTTP_ONLY;GLOG_NO_ABBREVIATED_SEVERITIES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libcurl_a.lib;wldap32.lib;crypt32.lib;Normaliz.lib;Advapi32.lib;ws2_32.lib;winmm.lib;dxva2.lib;ole32.lib;gdi32.lib;user32.lib;d3d9.lib;dwmapi.lib;dbghelp.lib;libssl.lib;libcrypto.lib;SDL2.lib;SDL2_ttf.lib;avcodec.lib;avutil.lib;opus.lib;dxgi.lib;d3d11.lib;discord-rpc.lib;moonlight-common-c.lib;iphlpapi.lib;mdns_cpp.lib;soundio.lib;h264bitstream.lib;AntiHooking.lib;shell32.lib;glog.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\libs\windows\lib\x64;..\x64\Release;C:\openssl\lib;C:\Utils\my_sql\mysql-5.7.25-winx64\lib;C:\Utils\postgresql\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/MANIFESTINPUT:./Moonlight.exe.manifest "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateManifest>true</GenerateManifest>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\RazerRemotePlayClient.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.0</Version>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;NDEBUG;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x060000;_USE_MATH_DEFINES;HAVE_FFMPEG;HAVE_SOUNDIO;SOUNDIO_STATIC_LIBRARY;HAVE_DISCORD;VERSION_STR=\"5.0.1\";NDEBUG;QT_NO_DEBUG;QT_QUICKCONTROLS2_LIB;QT_QUICK_LIB;QT_SVG_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_QMLMODELS_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\libs\windows\include\x64;..\libs\windows\include;..\moonlight-common-c\moonlight-common-c\src;..\qmdnsengine\qmdnsengine\src\include;..\qmdnsengine;..\soundio\libsoundio;..\h264bitstream\h264bitstream;..\AntiHooking;C:\Qt\5.15.2\msvc2019_64\include;C:\Qt\5.15.2\msvc2019_64\include\QtQuickControls2;C:\Qt\5.15.2\msvc2019_64\include\QtQuick;C:\Qt\5.15.2\msvc2019_64\include\QtSvg;C:\Qt\5.15.2\msvc2019_64\include\QtWidgets;C:\Qt\5.15.2\msvc2019_64\include\QtGui;C:\Qt\5.15.2\msvc2019_64\include\QtANGLE;C:\Qt\5.15.2\msvc2019_64\include\QtQmlModels;C:\Qt\5.15.2\msvc2019_64\include\QtQml;C:\Qt\5.15.2\msvc2019_64\include\QtNetwork;C:\Qt\5.15.2\msvc2019_64\include\QtCore;debug;/include;C:\Qt\5.15.2\msvc2019_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x060000;_USE_MATH_DEFINES;HAVE_FFMPEG;HAVE_SOUNDIO;SOUNDIO_STATIC_LIBRARY;HAVE_DISCORD;VERSION_STR="5.0.1";QT_QUICKCONTROLS2_LIB;QT_QUICK_LIB;QT_SVG_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_QMLMODELS_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;winmm.lib;dxva2.lib;ole32.lib;gdi32.lib;user32.lib;d3d9.lib;dwmapi.lib;dbghelp.lib;C:\Users\cheng.deng\Desktop\stream\moonlight-qt\libs\windows\lib\x64\libssl.lib;C:\Users\cheng.deng\Desktop\stream\moonlight-qt\libs\windows\lib\x64\libcrypto.lib;C:\Users\cheng.deng\Desktop\stream\moonlight-qt\libs\windows\lib\x64\SDL2.lib;C:\Users\cheng.deng\Desktop\stream\moonlight-qt\libs\windows\lib\x64\SDL2_ttf.lib;C:\Users\cheng.deng\Desktop\stream\moonlight-qt\libs\windows\lib\x64\avcodec.lib;C:\Users\cheng.deng\Desktop\stream\moonlight-qt\libs\windows\lib\x64\avutil.lib;C:\Users\cheng.deng\Desktop\stream\moonlight-qt\libs\windows\lib\x64\opus.lib;dxgi.lib;d3d11.lib;C:\Users\cheng.deng\Desktop\stream\moonlight-qt\libs\windows\lib\x64\discord-rpc.lib;moonlight-common-c.lib;qmdnsengine.lib;soundio.lib;h264bitstream.lib;AntiHooking.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5QuickControls2d.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Quickd.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Svgd.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Widgetsd.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Guid.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5QmlModelsd.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Qmld.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Networkd.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Cored.lib;C:\Qt\5.15.2\msvc2019_64\lib\qtmaind.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\cheng.deng\Desktop\stream\moonlight-qt\libs\windows\lib\x64;C:\Users\cheng.deng\Desktop\stream\moonlight-qt\moonlight-common-c\debug;C:\Users\cheng.deng\Desktop\stream\moonlight-qt\qmdnsengine\debug;C:\Users\cheng.deng\Desktop\stream\moonlight-qt\soundio\debug;C:\Users\cheng.deng\Desktop\stream\moonlight-qt\h264bitstream\debug;C:\Users\cheng.deng\Desktop\stream\moonlight-qt\AntiHooking\debug;C:\openssl\lib;C:\Utils\my_sql\mysql-5.7.25-winx64\lib;C:\Utils\postgresql\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/MANIFESTINPUT:C:/Users/cheng.deng/Desktop/stream/moonlight-qt/app/Moonlight.exe.manifest "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateManifest>true</GenerateManifest>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\Moonlight.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.0</Version>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x060000;_USE_MATH_DEFINES;HAVE_FFMPEG;HAVE_SOUNDIO;SOUNDIO_STATIC_LIBRARY;HAVE_DISCORD;VERSION_STR=\"5.0.1\";QT_QUICKCONTROLS2_LIB;QT_QUICK_LIB;QT_SVG_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_QMLMODELS_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\libs\windows\include\x64;..\libs\windows\include;..\moonlight-common-c\moonlight-common-c\src;..\mdns_cpp\mdns_cpp\include;..\qmdnsengine\qmdnsengine\src\include;..\qmdnsengine;..\soundio\libsoundio;..\h264bitstream\h264bitstream;..\AntiHooking;debug;/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;_USE_MATH_DEFINES;HAVE_FFMPEG;HAVE_SOUNDIO;SOUNDIO_STATIC_LIBRARY;HAVE_DISCORD;VERSION_STR="5.0.1";BUILDING_LIBCURL;HTTP_ONLY;GLOG_NO_ABBREVIATED_SEVERITIES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libcurl_a.lib;wldap32.lib;crypt32.lib;Normaliz.lib;Advapi32.lib;ws2_32.lib;winmm.lib;dxva2.lib;ole32.lib;gdi32.lib;user32.lib;d3d9.lib;dwmapi.lib;dbghelp.lib;libssl.lib;libcrypto.lib;SDL2.lib;SDL2_ttf.lib;avcodec.lib;avutil.lib;opus.lib;dxgi.lib;d3d11.lib;discord-rpc.lib;moonlight-common-c.lib;iphlpapi.lib;mdns_cpp.lib;soundio.lib;h264bitstream.lib;AntiHooking.lib;shell32.lib;glogd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\libs\windows\lib\x64;..\x64\Debug;C:\openssl\lib;C:\Utils\my_sql\mysql-5.7.25-winx64\lib;C:\Utils\postgresql\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/MANIFESTINPUT:./Moonlight.exe.manifest "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateManifest>true</GenerateManifest>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\RazerRemotePlayClient.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>5.0</Version>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x060000;_USE_MATH_DEFINES;HAVE_FFMPEG;HAVE_SOUNDIO;SOUNDIO_STATIC_LIBRARY;HAVE_DISCORD;VERSION_STR=\"5.0.1\";QT_QUICKCONTROLS2_LIB;QT_QUICK_LIB;QT_SVG_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_QMLMODELS_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="backend\asynctaskmanager.cpp" />
+    <ClCompile Include="backend\boxartmanager.cpp" />
+    <ClCompile Include="backend\razer.cpp" />
+    <ClCompile Include="backend\windowsmessage.cpp" />
+    <ClCompile Include="backend\mdnswarp.cpp" />
+    <ClCompile Include="backend\computermanager.cpp" />
+    <ClCompile Include="backend\identitymanager.cpp" />
+    <ClCompile Include="backend\nvaddress.cpp" />
+    <ClCompile Include="backend\nvapp.cpp" />
+    <ClCompile Include="backend\nvcomputer.cpp" />
+    <ClCompile Include="backend\nvhttp.cpp" />
+    <ClCompile Include="backend\nvpairingmanager.cpp" />
+    <ClCompile Include="backend\richpresencemanager.cpp" />
+    <ClCompile Include="backend\systemproperties.cpp" />
+    <ClCompile Include="backend\httpserver.cpp" />
+    <ClCompile Include="gui\addcomputer.cpp" />
+    <ClCompile Include="gui\app.cpp" />
+    <ClCompile Include="gui\computer.cpp" />
+    <ClCompile Include="gui\deletecomputer.cpp" />
+    <ClCompile Include="gui\pair.cpp" />
+    <ClCompile Include="gui\quit.cpp" />
+    <ClCompile Include="gui\settings.cpp" />
+    <ClCompile Include="gui\stream.cpp" />
+    <ClCompile Include="settings\configuer.cpp" />
+    <ClCompile Include="settings\compatfetcher.cpp" />
+    <ClCompile Include="settings\mappingfetcher.cpp" />
+    <ClCompile Include="settings\mappingmanager.cpp" />
+    <ClCompile Include="settings\streamingpreferences.cpp" />
+    <ClCompile Include="streaming\audio\renderers\sdlaud.cpp" />
+    <ClCompile Include="streaming\audio\renderers\soundioaudiorenderer.cpp" />
+    <ClCompile Include="streaming\audio\audio.cpp" />
+    <ClCompile Include="streaming\input\abstouch.cpp" />
+    <ClCompile Include="streaming\input\gamepad.cpp" />
+    <ClCompile Include="streaming\input\input.cpp" />
+    <ClCompile Include="streaming\input\keyboard.cpp" />
+    <ClCompile Include="streaming\input\mouse.cpp" />
+    <ClCompile Include="streaming\input\reltouch.cpp" />
+    <ClCompile Include="streaming\video\ffmpeg-renderers\d3d11va.cpp" />
+    <ClCompile Include="streaming\video\ffmpeg-renderers\dxva2.cpp" />
+    <ClCompile Include="streaming\video\ffmpeg-renderers\pacer\dxvsyncsource.cpp" />
+    <ClCompile Include="streaming\video\ffmpeg-renderers\pacer\pacer.cpp" />
+    <ClCompile Include="streaming\video\ffmpeg-renderers\sdlvid.cpp" />
+    <ClCompile Include="streaming\video\ffmpeg-renderers\swframemapper.cpp" />
+    <ClCompile Include="streaming\video\ffmpeg.cpp" />
+    <ClCompile Include="streaming\video\overlaymanager.cpp" />
+    <ClCompile Include="streaming\session.cpp" />
+    <ClCompile Include="streaming\streamutils.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="path.cpp" />
+    <ClCompile Include="wm.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Neuron_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="backend\asynctaskmanager.h" />
+    <ClInclude Include="backend\boxartmanager.h" />
+    <ClInclude Include="backend\identitymanager.h" />
+    <ClInclude Include="backend\mdnswarp.h" />
+    <ClInclude Include="backend\nvaddress.h" />
+    <ClInclude Include="backend\nvapp.h" />
+    <ClInclude Include="backend\nvcomputer.h" />
+    <ClInclude Include="backend\nvhttp.h" />
+    <ClInclude Include="backend\nvpairingmanager.h" />
+    <ClInclude Include="backend\razer.h" />
+    <ClInclude Include="backend\richpresencemanager.h" />
+    <ClInclude Include="backend\systemproperties.h" />
+    <ClInclude Include="backend\windowsmessage.h" />
+    <ClInclude Include="backend\computermanager.h" />
+    <ClInclude Include="backend\httpserver.h" />
+    <ClInclude Include="common.h" />
+    <ClInclude Include="gui\addcomputer.h" />
+    <ClInclude Include="gui\app.h" />
+    <ClInclude Include="gui\computer.h" />
+    <ClInclude Include="gui\deletecomputer.h" />
+    <ClInclude Include="gui\pair.h" />
+    <ClInclude Include="gui\quit.h" />
+    <ClInclude Include="gui\settings.h" />
+    <ClInclude Include="gui\stream.h" />
+    <ClInclude Include="settings\compatfetcher.h" />
+    <ClInclude Include="settings\configuer.h" />
+    <ClInclude Include="settings\mappingmanager.h" />
+    <ClInclude Include="settings\mappingfetcher.h" />
+    <ClInclude Include="settings\streamingpreferences.h" />
+    <ClInclude Include="streaming\audio\renderers\renderer.h" />
+    <ClInclude Include="streaming\audio\renderers\sdl.h" />
+    <ClInclude Include="streaming\audio\renderers\soundioaudiorenderer.h" />
+    <ClInclude Include="streaming\input\input.h" />
+    <ClInclude Include="streaming\video\decoder.h" />
+    <ClInclude Include="streaming\video\ffmpeg-renderers\d3d11va.h" />
+    <ClInclude Include="streaming\video\ffmpeg-renderers\dxutil.h" />
+    <ClInclude Include="streaming\video\ffmpeg-renderers\dxva2.h" />
+    <ClInclude Include="streaming\video\ffmpeg-renderers\pacer\dxvsyncsource.h" />
+    <ClInclude Include="streaming\video\ffmpeg-renderers\pacer\pacer.h" />
+    <ClInclude Include="streaming\video\ffmpeg-renderers\renderer.h" />
+    <ClInclude Include="streaming\video\ffmpeg-renderers\sdlvid.h" />
+    <ClInclude Include="streaming\video\ffmpeg-renderers\swframemapper.h" />
+    <ClInclude Include="streaming\video\ffmpeg.h" />
+    <ClInclude Include="streaming\video\overlaymanager.h" />
+    <ClInclude Include="streaming\session.h" />
+    <ClInclude Include="streaming\streamutils.h" />
+    <ClInclude Include="mainwindow.h" />
+    <ClInclude Include="path.h" />
+    <ClInclude Include="utils.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

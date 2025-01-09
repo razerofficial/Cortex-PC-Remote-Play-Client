@@ -9,6 +9,14 @@ Razer PC Remote Play Client enables seamless PC gaming and is developed as a sub
 - **Fast and seamless connection:** Tailored for efficient integration with Razer Accounts.
 - **Open-source:** Released under the [GPL-3.0 license](https://www.razer.com/cortex).
 
+## Build Setup Steps
+```
+git clone https://github.com/razerofficial/Cortex-PC-Remote-Play-Client.git
+cd Cortex-PC-Remote-Play-Client
+git submodule update --init --recursive
+```
+Now you can open the moonlight-qt.sln solution in Visual Studio 2022 and compile the project.
+
 ## System Requirements
 
 > **Warning**: These specifications are subject to change. Please do not purchase hardware solely based on this information.
@@ -35,6 +43,9 @@ To stream HDR content effectively, ensure the following:
   - **NVIDIA GPUs:** 1000-series (Pascal) or later.
   - **AMD GPUs:** RX 400-series (Polaris) or later.
 - **Windows HDR toggle:** Enable HDR mode in Windows settings for streaming in windowed mode.
+
+### Work with Cortex
+The Remote Play Client requires Razer Cortex to function properly. If you wish to use your own compiled version of RazerRemotePlayClient.exe, you should copy it to the following directory: %localappdata%\Razer\Razer Cortex\RemotePlay\Client.
 
 ## Support
 
